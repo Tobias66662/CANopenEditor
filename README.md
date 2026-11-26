@@ -289,13 +289,6 @@ Contributors
                 </a>
             </td>
             <td align="center">
-                <a href="https://github.com/Tobias66662">
-                    <img src="https://avatars.githubusercontent.com/u/166487365?v=4" width="100;" alt="Tobias66662"/>
-                    <br />
-                    <sub><b>Tobias66662</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/possibly-not">
                     <img src="https://avatars.githubusercontent.com/u/12588174?v=4" width="100;" alt="possibly-not"/>
                     <br />
