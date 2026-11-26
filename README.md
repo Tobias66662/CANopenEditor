@@ -21,7 +21,7 @@ This repository is home to three projects:
 
 How to use
 --------
-1. [Download the latest release's binary zip file](https://github.com/CANopenNode/CANopenEditor/releases). DO NOT DOWNLOAD SOURCE CODE.
+1. [Download the latest release's binary zip file](https://github.com/Tobias66662/CANopenEditor/releases). DO NOT DOWNLOAD SOURCE CODE.
 2. Unzip it.
 3. Go to net8.0-windows directory.
 4. Execute the .exe .
