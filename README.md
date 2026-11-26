@@ -88,31 +88,10 @@ Collaborators
 	<tbody>
 		<tr>
             <td align="center">
-                <a href="https://github.com/robincornelius">
-                    <img src="https://avatars.githubusercontent.com/u/159000?v=4" width="100;" alt="robincornelius"/>
+                <a href="https://github.com/Tobias66662">
+                    <img src="https://avatars.githubusercontent.com/u/166487365?v=4" width="100;" alt="Tobias66662"/>
                     <br />
-                    <sub><b>robincornelius</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/nimrof">
-                    <img src="https://avatars.githubusercontent.com/u/9848846?v=4" width="100;" alt="nimrof"/>
-                    <br />
-                    <sub><b>nimrof</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/CANopenNode">
-                    <img src="https://avatars.githubusercontent.com/u/13575344?v=4" width="100;" alt="CANopenNode"/>
-                    <br />
-                    <sub><b>CANopenNode</b></sub>
-                </a>
-            </td>
-            <td align="center">
-                <a href="https://github.com/trojanobelix">
-                    <img src="https://avatars.githubusercontent.com/u/15106425?v=4" width="100;" alt="trojanobelix"/>
-                    <br />
-                    <sub><b>trojanobelix</b></sub>
+                    <sub><b>Tobias66662</b></sub>
                 </a>
             </td>
 		</tr>
@@ -307,6 +286,13 @@ Contributors
                     <img src="https://avatars.githubusercontent.com/u/4819887?v=4" width="100;" alt="StormOli"/>
                     <br />
                     <sub><b>StormOli</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Tobias66662">
+                    <img src="https://avatars.githubusercontent.com/u/166487365?v=4" width="100;" alt="Tobias66662"/>
+                    <br />
+                    <sub><b>Tobias66662</b></sub>
                 </a>
             </td>
             <td align="center">
