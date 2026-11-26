@@ -455,8 +455,10 @@ namespace libEDSsharp
                     sub = new ODentry("COB-ID used by TPDO", (ushort)slot.ConfigurationIndex, 1);
                     sub.datatype = DataType.UNSIGNED32;
                     if (slot.nodeidpresent)
-                        sub.defaultvalue = "$NODEID+"; // DSP306: "The $NODEID must appear at the beginning of the expression. Otherwise the line is interpreted as without a formula. 
-                    sub.defaultvalue += String.Format("0x{0:X}", slot.COB);
+                        sub.defaultvalue = String.Format(
+                            "$NODEID+0x{0:X}", slot.COB - eds.dc.NodeID);
+                    else
+                        sub.defaultvalue = String.Format("0x{0:X}", slot.COB);
                     sub.accesstype = EDSsharp.AccessType.rw;
                     config.addsubobject(0x01, sub);
 
@@ -508,8 +510,10 @@ namespace libEDSsharp
                     sub = new ODentry("COB-ID used by RPDO", (ushort)slot.ConfigurationIndex, 1);
                     sub.datatype = DataType.UNSIGNED32;
                     if (slot.nodeidpresent)
-                        sub.defaultvalue = "$NODEID+"; // DSP306: "The $NODEID must appear at the beginning of the expression. Otherwise the line is interpreted as without a formula. 
-                    sub.defaultvalue += String.Format("0x{0:X}", slot.COB);
+                        sub.defaultvalue = String.Format(
+                            "$NODEID+0x{0:X}", slot.COB - eds.dc.NodeID);
+                    else
+                        sub.defaultvalue = String.Format("0x{0:X}", slot.COB);
                     sub.accesstype = EDSsharp.AccessType.rw;
                     config.addsubobject(0x01, sub);
 
@@ -677,6 +681,8 @@ namespace libEDSsharp
                     newslot.COB = 0xC0000000;
                     break;
             }
+            if (newslot.nodeidpresent)
+                newslot.COB += eds.dc.NodeID;
             
             newslot.configloc = "PERSIST_COMM";
             newslot.mappingloc = "PERSIST_COMM";
