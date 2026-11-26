@@ -166,15 +166,20 @@ namespace ODEditor
                 return;
             }
 
-            int current_width = newmapping.entry.Sizeofdatatype();
-            int width_limit = 64 + INFO_COLS_COUNT - cell.Position.Column;
-            width_limit = Math.Min(width_limit, newmapping.entry.Sizeofdatatype());
-            current_width = Math.Min(width_limit, current_width);
-            newmapping.width = current_width;
-            var change_pdo_entry_width = new ChangeMappingWidth(current_width, width_limit);
-            if (change_pdo_entry_width.ShowDialog() == DialogResult.OK)
+            newmapping.width = newmapping.entry.Sizeofdatatype();
+
+            int available_width = 64 + INFO_COLS_COUNT - cell.Position.Column;
+
+            if (newmapping.width > available_width)
             {
-                newmapping.width = change_pdo_entry_width.selected_width;
+                MessageBox.Show(
+                    "Insufficient space in the PDO to map this object.",
+                    "Invalid PDO mapping",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                UpdatePDOinfo();
+                return;
             }
 
             if (location.mappingentry.entry == null)
