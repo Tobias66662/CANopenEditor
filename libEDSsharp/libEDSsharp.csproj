@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <Target Name="AssignInformationalVersion" >
-    <Exec Command="git describe --tags --long --dirty" ConsoleToMSBuild="true">
+    <Exec Command="git describe --tags --long --dirty --always" ConsoleToMSBuild="true">
       <Output TaskParameter="ConsoleOutput" PropertyName="gitInfo" />
     </Exec>
     <PropertyGroup>
